@@ -52,5 +52,40 @@ for x,num in enumerate(num_list):
 
 print(count)  
 
-a = isinstance(str, "aa")
-print(a)
+# a = isinstance(str, "aa")
+# print(a)
+
+if 1 in [3,4,5,6,7,1]:
+    print("it is there")
+else:
+    print('its not there')
+
+if 'bar' in {'foo':1, 'bar':2,'baz':3}:
+    print(1)
+    print(2)
+    if 'a' in 'qux':
+        print(3)
+print(4)
+
+a = 100
+b = 50
+
+# Write a Python if/else statement to assign the smaller of a and b to the variable m.
+if a>b:
+    m = b
+    print(str(b) +' is smaller')
+else:
+    m = a
+    print(str(a) + ' is smaller')
+
+print("ab") if '123'.isdigit() else print("by")
+
+x = 50
+y = 40
+
+if x < y:
+    pass
+else:
+    pass
+
+

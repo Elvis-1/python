@@ -16,3 +16,4 @@ print(a+b)
 name = "John"
 print(len(name))
 print(name[3])
+print(r'foo\\bar\nbaz')
