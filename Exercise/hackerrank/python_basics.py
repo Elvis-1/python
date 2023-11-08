@@ -33,4 +33,19 @@ print(a + b)
 print(a - b)
 print(a * b)
 
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
 
+     # if a reminder is returned, it means its true therefore, leap is false
+    if year % 4 == 0:
+        leap = True
+    elif year % 100 == 0 and not year % 400 == 0 :
+        leap = False
+    else :
+        
+        leap = True
+    return leap
+
+print(is_leap(1990))

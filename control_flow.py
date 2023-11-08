@@ -30,3 +30,41 @@ match http_status:
         print("Server Error")
     case _:
         print("Default")
+
+    
+    # PYTHON'S TERNARY OPERATOR
+
+    # <expr1> if <conditional_expr> else <expr2>
+
+    # In the above example, <conditional_expr> is evaluated first. If it is true, the expression evaluates to <expr1>. If it is false, the expression evaluates to <expr2>.
+
+raining = False 
+print('Lets go to the ', 'beach' if not raining else 'library')
+
+age = 12
+s = 'minor' if age < 21 else 'adult'
+print(s)
+y ='yes' if 'qux' in ['foo', 'bar', 'baz'] else   'no'
+print(y)
+
+# chaining conditional expressions together
+x = 3
+s = ('foo' if (x == 1) else
+     'bar' if (x == 2) else
+     'baz' if (x == 3) else
+     'qux' if (x == 4) else
+     'quux'
+     )
+
+
+
+
+print('foo' if True else 1/0)
+
+print(1/0 if False else 'bar')
+
+
+
+
+
+
