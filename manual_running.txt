@@ -1,0 +1,2 @@
+1. cd the folder
+2. python filename.py
