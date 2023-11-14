@@ -1,5 +1,6 @@
 favorites = ['Potatoes', 'Tomatoes', 'Bannana','Plantain'];
 
+# range(start,stop,steps) stop value is non inclusive
 for i in range(10):
     print('Looping ..',i)
 
