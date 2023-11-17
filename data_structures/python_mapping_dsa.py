@@ -5,6 +5,7 @@ a = [[96], [69]]
 map = map(str,a)
 print(map)
 list = list(map)
+
 print(list)
 
 join = "".join(list)
