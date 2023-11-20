@@ -18,17 +18,24 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
 def usingOneInputList(number):
     numberDict = {x:x**2 for x in number}
     print("Using one input list to create dict: ", numberDict)
+
+    return numberDict
 # usingOneInputList(number)
 
 # Using two input lists
 
 def usintTwoInputList(number,months):
- months_dict = {key:value for (key, value) in zip(number, months)}
- print("Using two lists: ", months_dict)
+ monthsDict = {key:value for (key, value) in zip(number, months)}
+ print("Using two lists: ", monthsDict)
+ return monthsDict
 
-# usintTwoInputList(number,months)
+# monthsDict = usintTwoInputList(number,months)
 
-
+def usingOneInputList(monthsDict):
+ months_dict = {key:value for key, value in monthsDict.items()}
+ print("Using one lists: ", months_dict)
+# monthsDict = {'January': 1, 'February': 2, 'March': 3}
+# usingOneInputList(monthsDict)
 
 
 

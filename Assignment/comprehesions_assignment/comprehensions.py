@@ -85,16 +85,18 @@ def map_id_to_initial(employee_list):
       dict - A dictionary mapping an employee's id (value) to their first initial (key).
    """
    ### WRITE SOLUTION CODE HERE
-
+   dict = {key['name'][0]:key['id'] for key in employee_list}
+   #print(employee_list)
+   return dict
    raise NotImplementedError()
 
 def main():
-   mod_emp_list = to_mod_list(employee_list)
-   print("Modified employee list: " + str(mod_emp_list) + "\n")
+   #mod_emp_list = to_mod_list(employee_list)
+   # print("Modified employee list: " + str(mod_emp_list) + "\n")
 
-   print(f"List of usernames: {generate_usernames(mod_emp_list)}\n")
+   # print(f"List of usernames: {generate_usernames(mod_emp_list)}\n")
 
-   # print(f"Initials and ids: {map_id_to_initial(employee_list)}")
+   print(f"Initials and ids: {map_id_to_initial(employee_list)}")
 
 if __name__ == "__main__":
    main()
