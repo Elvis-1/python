@@ -1,4 +1,4 @@
-# Dictionary comprehension takes one or two lists as input and creates a dictionary out of it
+# Dictionary comprehension takes one or two lists as input and creates a dictionary out of it.
 
 # dict = { key:value for key, value in <sequence> if <condition> }
 
