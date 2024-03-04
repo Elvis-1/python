@@ -109,12 +109,12 @@ def findAve(array):
     ave = sum/len(dist)
     return ave
 
-a = input()
+# a = input()
 # split the inputl
-list = a.split(),
+# list = a.split(),
 # convert to integers
-newList = list(map(int,list))
-print(newList)
+# newList = list(map(int,list))
+# print(newList)
 #https://www.hackerrank.com/challenges/symmetric-difference/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=7-day-campaign
 
 
@@ -129,3 +129,21 @@ print(array)
 #formatted_result = "{:.3f}".format(result)
 
 # average(array)
+#
+
+def fizzBuzz(n):
+    # Write your code here
+     for num in range(1,n+1):
+       
+       if num % 3 == 0 and n % 5 == 0:
+        print("FizzBuzz")
+        
+       if num%3 == 0 and num%5 != 0:
+        print("Fizz")
+       
+       if num%5 == 0 and num%3 != 0:
+        print("Buzz")
+        
+       if num%3 != 0 or num%5 !=0:
+        print(num)
+fizzBuzz(15)
