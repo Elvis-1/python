@@ -1,3 +1,5 @@
+
+
 bill_total = 300
 
 discount1 = 10

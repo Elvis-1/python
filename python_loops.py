@@ -15,7 +15,7 @@ for idx, item in enumerate(favorites):
 
 count = 0
 while count < len(favorites):
-    print("I like this deserts", favorites[count])
+    print("I like this desert", favorites[count])
     count = count+1
 
 

@@ -16,4 +16,12 @@ print(a+b)
 name = "John"
 print(len(name))
 print(name[3])
+# using escape characters
+print("Hello\nWorld")
+print("Hello\tWorld")    
+# using raw string
+print(r"Hello\nWorld")
+# using raw string with escape characters
+print(r"foo\\bar\nbaz")
 print(r'foo\\bar\nbaz')
+
