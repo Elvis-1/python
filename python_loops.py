@@ -42,6 +42,14 @@ for dessert in favorites:
         break 
     else:
         print('No sorry, not a dessert on my list')
+
+# to avoid repitition
+for dessert in favorites:
+    if dessert == 'Pudding':
+        print('Yes one of my favorite desserts is', dessert)
+        break 
+else:
+        print('No sorry, not a dessert on my list')
     
 
 # Continue

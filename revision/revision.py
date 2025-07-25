@@ -118,10 +118,96 @@ favorites = ['Creme Brulee', 'Apple Pie', 'Churros', 'Tiramisú', 'Chocolate Cak
 # for  item in favorites:
 #     print(item)
 
+# count = 0
+# while count < len(favorites):
+#     print('I like ',favorites[count])
+#     count +=1
+
+
+# Practicing control flow and loops
+# In many cases, you may need to search for a particular item in a list
+
+favorites = ['Creme Brulee', 'Apple Pie', 'Churros', 'Tiramisú', 'Chocolate Cake']
+searchItem = 'Churros'
+for item in favorites:
+    if searchItem == item:
+        print('I found my desert', item)
+        break
+else:
+        print('My desert is not included!')
+
+# for item in favorites:
+#     if searchItem == item:
+#         continue
+#     print('These are other deserts', item)
+   
+
+for item in favorites:
+    if searchItem == item:
+        pass
+    print('These are other deserts', item)
+
+
+# NEXTED FOR LOOPS
+# for time complexity, it is poor
+#oute loop
+for j in range(10):
+    # inner loop
+    for i in range(10):
+        print(i, end=' ')
+    print(' ')
+
+# solve a control loop problems
+num_list = [33,42,5,66,77,22,16,79,36,62,78,43,88,39,53,67,89,11]
+
+# 1.   Under the num_list create a new for loop and print out each value on the list in sequential order.
+
+for num in num_list:
+    print(num, end=' ')
+
+# 2.  Inside the for loop, create a condition that will look for all numbers that are greater than 45 and print out only numbers that meet that condition
+
+for num in num_list:
+    if num > 45:
+        print(num)
+
+# 3.  Change the print statement to “Over 45” and add an else condition with a print statement of “Under 45”.
+
+for num in num_list:
+    if num > 45:
+        print(num, 'Over 45')
+    else:
+        print(num, 'Under 45')
+
+# 4.  Update the for loop to use the enumerate function so you can get and use the index. Alter the condition to look for number 36 and print out the following: ‘Number found at position: ‘, index number
+
+for index, item in enumerate(num_list):
+    if item == 36:
+        print('Number found at position: ', index)
+
+# 5.  Next, create a new variable called count and assign it a value of 0 and place it outside the for loop.
+# 6.  Inside the for loop increment the counter by 1.
+# 7.  Add a print statement outside the for loop to print the value of the count variable.
+# 8.  Finally, add a break statement directly after the print statement inside the if condition for finding the number.
+
 count = 0
-while count < len(favorites):
-    print('I like ',favorites[count])
+for index, num in enumerate(num_list):
     count +=1
+    if num == 36:
+        print('Number found at position: ', index)
+        break
+ 
+print(count)
+
+
+# python functions
+def calculateTax(bill,taxRate):
+    return (bill * taxRate)/100
+
+print('Total tax is: ', calculateTax(100, 5))
+
+
+
 
 
 
